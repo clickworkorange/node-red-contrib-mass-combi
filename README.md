@@ -1,5 +1,5 @@
 # node-red-contrib-mass-combi
-Very early stage experiments talking to a Mastervolt Mass Combi from Node-RED. With a correctly configured serial port connected to a Mass Combi these flows should provide the following options: 
+Very early stage experiments talking to a Mastervolt Mass Combi from Node-RED. With a correctly configured serial port connected to a Mass Combi these flows should provide the following dashboards: 
 
 ![Mass Combi Status](/images/Screenshot_2022-07-11_20-57-54.png)
 
