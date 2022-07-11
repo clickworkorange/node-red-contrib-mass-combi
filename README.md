@@ -39,6 +39,8 @@ if(response) {
     }
 }
 ````
+The tristate (0,1,2) of `inv` and `chg` is because these LEDs can be off (=off), yellow (=on) and red (=error). 
+
 To get the input current (from shore), send `["0xC1","0xF0","0x37","0x00","0x00","0x00","0x00","0x01","0xE9"]` and parse with:
 
 ````javascript
