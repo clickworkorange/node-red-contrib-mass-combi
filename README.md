@@ -39,3 +39,16 @@ if(response) {
     }
 }
 ````
+To get the input current (from shore), send `["0xC1","0xF0","0x37","0x00","0x00","0x00","0x00","0x01","0xE9"]` and parse with:
+
+````javascript
+function bytesToInt(bytes) {
+  // return little-endian 16-bit integer
+  return (((bytes[1] & 0xFF) << 8) | (bytes[0] & 0xFF));
+}
+
+if(response) {
+    var amp = bytesToInt(response.slice(4,6)) / 2560;
+    return amp;
+}
+````
