@@ -27,7 +27,7 @@ if(response) {
     var chg_on  = getBit(response[3], 7); // [0]011 0000 > 0
     var chg_err = getBit(response[3], 0); // 1111 010[1] > 1
     var alm     = getBit(response[5], 6); 
-    var err     = 0; // where to look for "failure"?
+    var fail    = 0; // where to look for "failure"?
     var inv     = inv_err ? 2 : inv_on;
     var chg     = chg_err ? 2 : chg_on;
     return {
@@ -35,11 +35,11 @@ if(response) {
         "inverter": inv, 
         "charger": chg, 
         "alarm": alm, 
-        "error": err
+        "failure": fail
     }
 }
 ````
-The tristate (0,1,2) of `inv` and `chg` is because these LEDs can be off (=off), yellow (=on) and red (=error). 
+The tristate (0,1,2) of `inv` and `chg` is because these LEDs can be off (=off), yellow (=on) and red (=error). There is also a "failure" LED which I don't know what condition will activate, and thus I haven't been able to identify which bit controls it. It's in there, I'm sure. 
 
 To get the input current (from shore), send `["0xC1","0xF0","0x37","0x00","0x00","0x00","0x00","0x01","0xE9"]` and parse with:
 
