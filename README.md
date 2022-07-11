@@ -23,7 +23,7 @@ function getBit(byte, pos) {
 if(response) {
     var pwr     = getBit(response[6], 0); // 0001 010[1] > 1
     var inv_on  = getBit(response[4], 1); // 1000 00[1]1 > 1
-    var inv_err = getBit(response[4], 2); // 1000 00[1]1 > 1
+    var inv_err = getBit(response[4], 2); // 1000 0[0]11 > 0
     var chg_on  = getBit(response[3], 7); // [0]011 0000 > 0
     var chg_err = getBit(response[3], 0); // 1111 010[1] > 1
     var alm     = getBit(response[5], 6); 
