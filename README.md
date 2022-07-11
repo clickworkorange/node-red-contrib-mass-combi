@@ -13,7 +13,7 @@ IIRC 12VDC is present on one of the RJ12 modular jack pins, so be careful.
 
 In case you're not using Node-RED, here are some JavaScript examples to get you started ("meta" code ripped from my Node-RED nodes): 
 
-To read the control panel LEDs, send `["0xC1","0xF0","0x25","0x00","0x00","0x00","0x00","0x01","0xD7"]` and parse with
+To read the control panel LEDs, send `["0xC1","0xF0","0x25","0x00","0x00","0x00","0x00","0x01","0xD7"]` and parse the response with
 
 ````javascript
 function getBit(byte, pos) {
