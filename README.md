@@ -8,3 +8,5 @@ Very early stage experiments talking to a Mastervolt Mass Combi from Node-RED. W
 The serial connection should be 19200-N-8-1 and wired like this: 
 
 ![QRS232 connection table](/images/Screenshot_2022-07-11_21-11-09.png)
+
+IIRC 12VDC is present on one of the modular jack pins, so be careful.
