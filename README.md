@@ -55,3 +55,5 @@ if(response) {
 }
 ````
 N.b. the need to divide by 2560 suggests the alignment is off - and the coarse data suggests a missing decimal. You still get the right value, just at a lower resolution than it probably should have. 
+
+It is quite possible that the protocol includes some notion of unit IDs, and that the examples given above won't work with your device. I can't quite see where from the raw data, but if you don't get a response let me know in the comments. 
