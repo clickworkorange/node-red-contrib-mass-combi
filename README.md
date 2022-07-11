@@ -7,4 +7,4 @@ Very early stage experiments talking to a Mastervolt Mass Combi from Node-RED. W
 
 The serial connection should be made like this: 
 
-![QRS232 connection table](Screenshot_2022-07-11_21-11-09.png)
+![QRS232 connection table](/images/Screenshot_2022-07-11_21-11-09.png)
