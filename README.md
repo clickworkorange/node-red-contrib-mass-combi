@@ -54,3 +54,4 @@ if(response) {
     return amp;
 }
 ````
+N.b. the need to divide by 2560 suggests the alignment is off - and the coarse data suggests a missing decimal. You still get the right value, just at a lower resolution than it probably should have. 
